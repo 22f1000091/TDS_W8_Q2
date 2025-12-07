@@ -8,23 +8,21 @@ author: 22f1000091@ds.study.iitm.ac.in
 
 <style>
 section {
-  background: #ffffff;
   font-family: 'Arial', sans-serif;
-  font-size: 24px;
+  font-size: 26px;
+  padding: 50px;
 }
 h1 {
-  color: #2c3e50;
-  border-bottom: 2px solid #2c3e50;
+  color: #2e86de;
 }
 code {
-    background-color: #f0f0f0;
-    padding: 2px 5px;
-    border-radius: 4px;
+  background: #dfe6e9;
+  color: #2d3436;
 }
 </style>
 
-# Technical Documentation
-## Project Overview
+# Project Documentation
+## Technical Writer Presentation
 
 **Email:** 22f1000091@ds.study.iitm.ac.in
 
@@ -32,33 +30,35 @@ code {
 
 ![bg cover](https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80)
 
-# Global Infrastructure
+# Global Architecture
 
-This slide uses `![bg cover]` to set the background image.
+This slide features the required background image and ensures text is readable.
+
+---
+
+# Mathematical Complexity
+
+We use LaTeX equations for formal documentation:
+
+$$
+f(x) = \sum_{i=0}^{\infty} \frac{f^{(i)}(a)}{i!} (x-a)^i
+$$
+
+The time complexity for the new search module is:
+$$O(n \log n)$$
 
 ---
 
-# Mathematical Analysis
+# Version Control Strategy
 
-We solve for complexity using the following equation:
+This documentation follows **Infrastructure as Code** principles.
 
-$$
-T(n) = 2T(n/2) + \Theta(n)
-$$
-
-Which resolves to:
-
-$$
-O(n \log n)
-$$
+1.  **Pull** the repository.
+2.  **Edit** the Markdown.
+3.  **Push** to trigger the build.
 
 ---
-<!-- _color: red -->
 
-# Deployment Strategy
+# End of Presentation
 
-1. Install CLI: `npm install -g @marp-team/marp-cli`
-2. Build PDF: `marp slides.md --pdf`
-3. Push to Git.
-
-**Contact:** 22f1000091@ds.study.iitm.ac.in
+Thank you for reviewing the technical specification.
