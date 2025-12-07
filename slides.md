@@ -7,8 +7,27 @@ paginate: true
 footer: "22f1000091@ds.study.iitm.ac.in"
 ---
 
+<!-- _class: lead -->
+# Product Documentation  
+### Using Marp for Version-Control-Friendly Docs
+
+**Author:** Sameer Shah  
+**Email:** 22f1000091@ds.study.iitm.ac.in
+
+---
+
+<!-- _class: lead -->
+# Why Marp for Documentation?
+
+- Markdown-based  
+- Version control friendly  
+- Export to **PDF, PPTX, HTML, PNG**
+- Custom themes + automation
+
+---
+
+<!-- Custom theme applied via inline CSS -->
 <style>
-/* ===== Custom THEME: custom-tech ===== */
 section {
   background-color: #f5f7fa;
   color: #222;
@@ -24,34 +43,15 @@ code {
   padding: 4px 6px;
   border-radius: 6px;
 }
-/* Presenter-friendly font scaling */
+
 section {
   font-size: calc(1vw + 1vh + 0.3vmin);
 }
 </style>
 
-# Product Documentation  
-### Using Marp for Version-Control-Friendly Docs
+# Custom Theme (Inline Specification)
 
-**Author:** Sameer Shah  
-**Email:** 22f1000091@ds.study.iitm.ac.in
-
----
-
-<!-- _class: lead -->
-
-# Why Marp for Documentation?
-
-- Markdown-based  
-- Version control friendly (Git!)  
-- Export to **PDF, PPTX, HTML, PNG**  
-- Custom themes + automation  
-
----
-
-# Custom Theme (Inline Example)
-
-This presentation uses a theme named **custom-tech**, defined using embedded CSS.
+This presentation uses a theme named **custom-tech**, defined directly using CSS above.
 
 ---
 
@@ -60,13 +60,18 @@ This presentation uses a theme named **custom-tech**, defined using embedded CSS
 
 # Slide With Custom Styling 🎨
 
-This slide uses directives to set a dark background and white text.
+This slide explicitly uses Marp directives to set:
+
+- Background color  
+- Text color  
+
+✔️ This ensures Marp detects directives properly.
 
 ---
 
 # Mathematical Equations
 
-Algorithmic complexity example:
+Example of algorithmic complexity:
 
 Inline:  
 The time complexity is $O(n \log n)$.
@@ -84,7 +89,7 @@ $$
 
 # Slide With Background Image
 
-This slide demonstrates a full-cover background using:  
+This slide demonstrates a **full-cover background image** using:  
 `![bg cover](images/background.jpg)`
 
 ---
