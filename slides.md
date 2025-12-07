@@ -2,63 +2,62 @@
 marp: true
 theme: default
 paginate: true
-header: 'Technical Documentation Project'
-footer: 'Generated via Marp'
 math: mathjax
+author: 22f1000091@ds.study.iitm.ac.in
 ---
 
 <style>
-/* Custom Theme Overrides */
 section {
-    font-family: 'Arial', sans-serif;
-    padding: 70px;
+  background: #ffffff;
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
 }
 h1 {
-    color: #0066cc;
+  color: #2c3e50;
+  border-bottom: 2px solid #2c3e50;
 }
-/* Style for code blocks */
 code {
     background-color: #f0f0f0;
-    color: #d63384;
+    padding: 2px 5px;
+    border-radius: 4px;
 }
 </style>
 
-# Documentation Strategy
-## A Marp Presentation
+# Technical Documentation
+## Project Overview
 
-**Author:** Technical Writing Team
 **Email:** 22f1000091@ds.study.iitm.ac.in
 
 ---
 
-# Hardware Integration
+![bg cover](https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80)
 
-## This slide features a background image.
+# Global Infrastructure
 
-The text is overlaid on a chip-set image to demonstrate visual capabilities.
+This slide uses `![bg cover]` to set the background image.
 
 ---
 
-# Algorithmic Analysis
+# Mathematical Analysis
 
-We use standard Big O notation to denote complexity, rendered via MathJax.
+We solve for complexity using the following equation:
+
+$$
+T(n) = 2T(n/2) + \Theta(n)
+$$
+
+Which resolves to:
 
 $$
 O(n \log n)
 $$
 
-The specific formula for the load balancer is:
-
-$$
-f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2\pi i \xi x} \,d\xi
-$$
-
 ---
 
-# Final Details
+# Deployment Strategy
 
-* **Source:** GitHub Repository
-* **Format:** Markdown (`.md`)
-* **Output:** PDF / HTML / PPTX
+1. Install CLI: `npm install -g @marp-team/marp-cli`
+2. Build PDF: `marp slides.md --pdf`
+3. Push to Git.
 
 **Contact:** 22f1000091@ds.study.iitm.ac.in
