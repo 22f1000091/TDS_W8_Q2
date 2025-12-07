@@ -53,6 +53,7 @@ O(n \log n)
 $$
 
 ---
+<!-- _color: red -->
 
 # Deployment Strategy
 
