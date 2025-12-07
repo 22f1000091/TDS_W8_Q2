@@ -1,9 +1,12 @@
 ---
 marp: true
 theme: default
-paginate: true
+paginate: true 
 math: mathjax
-author: 22f1000091@ds.study.iitm.ac.in
+# GLOBAL DIRECTIVE 1: header (Includes required email)
+header: 'Technical Documentation | Contact: 22f1000091@ds.study.iitm.ac.in'
+# GLOBAL DIRECTIVE 2: footer 
+footer: 'Version 1.0'
 ---
 
 <style>
@@ -21,10 +24,9 @@ code {
 }
 </style>
 
-# Project Documentation
-## Technical Writer Presentation
+# Product Documentation
 
-**Email:** 22f1000091@ds.study.iitm.ac.in
+## Marp Presentation for Maintainability
 
 ---
 
@@ -32,33 +34,28 @@ code {
 
 # Global Architecture
 
-This slide features the required background image and ensures text is readable.
+The design ensures scalability and modularity.
 
 ---
 
-# Mathematical Complexity
+# Algorithmic Complexity
 
-We use LaTeX equations for formal documentation:
+We use LaTeX equations (required feature) for precision:
 
 $$
-f(x) = \sum_{i=0}^{\infty} \frac{f^{(i)}(a)}{i!} (x-a)^i
+T(n) = O(n \log n)
 $$
 
-The time complexity for the new search module is:
-$$O(n \log n)$$
+The cost function is:
+$$
+J(\theta) = \frac{1}{2m} \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)})^2
+$$
 
 ---
 
-# Version Control Strategy
+# Next Steps
 
-This documentation follows **Infrastructure as Code** principles.
-
-1.  **Pull** the repository.
-2.  **Edit** the Markdown.
-3.  **Push** to trigger the build.
+1.  Review the technical specification.
+2.  Approve version $1.0$.
 
 ---
-
-# End of Presentation
-
-Thank you for reviewing the technical specification.
