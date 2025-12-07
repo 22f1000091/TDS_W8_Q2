@@ -1,61 +1,97 @@
 ---
 marp: true
-theme: default
-paginate: true 
-math: mathjax
-# GLOBAL DIRECTIVE 1: header (Includes required email)
-header: 'Technical Documentation | Contact: 22f1000091@ds.study.iitm.ac.in'
-# GLOBAL DIRECTIVE 2: footer 
-footer: 'Version 1.0'
+title: Product Documentation Presentation
+author: Sameer Shah
+theme: custom-tech
+paginate: true
+footer: "22f1000091@ds.study.iitm.ac.in"
 ---
 
 <style>
+/* ===== Custom THEME: custom-tech ===== */
 section {
-  font-family: 'Arial', sans-serif;
-  font-size: 26px;
-  padding: 50px;
+  background-color: #f5f7fa;
+  color: #222;
+  font-family: "Segoe UI", sans-serif;
 }
-h1 {
-  color: #2e86de;
+
+h1, h2, h3 {
+  color: #0057b7;
 }
+
 code {
-  background: #dfe6e9;
-  color: #2d3436;
+  background: #eef;
+  padding: 4px 6px;
+  border-radius: 6px;
+}
+/* Presenter-friendly font scaling */
+section {
+  font-size: calc(1vw + 1vh + 0.3vmin);
 }
 </style>
 
-# Product Documentation
+# Product Documentation  
+### Using Marp for Version-Control-Friendly Docs
 
-## Marp Presentation for Maintainability
+**Author:** Sameer Shah  
+**Email:** 22f1000091@ds.study.iitm.ac.in
 
 ---
 
+<!-- _class: lead -->
+
+# Why Marp for Documentation?
+
+- Markdown-based  
+- Version control friendly (Git!)  
+- Export to **PDF, PPTX, HTML, PNG**  
+- Custom themes + automation  
+
+---
+
+# Custom Theme (Inline Example)
+
+This presentation uses a theme named **custom-tech**, defined using embedded CSS.
+
+---
+
+<!-- _backgroundColor: #002244 -->
+<!-- _color: white -->
+
+# Slide With Custom Styling 🎨
+
+This slide uses directives to set a dark background and white text.
+
+---
+
+# Mathematical Equations
+
+Algorithmic complexity example:
+
+Inline:  
+The time complexity is $O(n \log n)$.
+
+Block:
+
+$$
+T(n) = T\left(\frac{n}{2}\right) + n
+$$
+
+---
+
+<!-- Background image example -->
 ![bg cover](https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80)
 
-# Global Architecture
+# Slide With Background Image
 
-The design ensures scalability and modularity.
-
----
-
-# Algorithmic Complexity
-
-We use LaTeX equations (required feature) for precision:
-
-$$
-T(n) = O(n \log n)
-$$
-
-The cost function is:
-$$
-J(\theta) = \frac{1}{2m} \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)})^2
-$$
+This slide demonstrates a full-cover background using:  
+`![bg cover](images/background.jpg)`
 
 ---
 
-# Next Steps
+# Code Example
 
-1.  Review the technical specification.
-2.  Approve version $1.0$.
-
----
+```python
+def add_record(record):
+    db.append(record)
+    return True
